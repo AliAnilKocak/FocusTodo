@@ -1,6 +1,6 @@
 .content {
-  flex: 15;
-  padding: 36px;
+  padding: 24px;
+  background-color: rgba(194, 223, 255, 0.2);
 }
 
 .box {

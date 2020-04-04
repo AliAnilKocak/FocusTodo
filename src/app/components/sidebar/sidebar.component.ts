@@ -33,7 +33,6 @@ export class SidebarComponent {
 
   selectedIndex: number = this.actions.length;
 
-
   panels = [
     {
       active: true,
@@ -46,5 +45,6 @@ export class SidebarComponent {
   setIndex(index: number) {
     this.selectedIndex = index;
   }
+
 
 }

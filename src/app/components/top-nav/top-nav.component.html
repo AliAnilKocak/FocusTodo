@@ -1,27 +1,30 @@
-<div class="top-nav">
-  <div class="leadings">
-    <h2>FOCUS TODO</h2>
-    <button nz-button nz-dropdown [nzDropdownMenu]="menu"><i class="add-circle" nz-icon nzTheme="fill"
-                                                             nzType="plus-circle"></i>New Item<i
-      nz-icon nzType="down"></i></button>
-    <nz-dropdown-menu #menu="nzDropdownMenu">
-      <ul nz-menu>
-        <li nz-menu-item>
-          <a>Next</a>
-        </li>
-        <li nz-menu-item>
-          <a>Waiting</a>
-        </li>
-        <li nz-menu-item>
-          <a>Scheduled</a>
-        </li>
-        <li nz-menu-item>
-          <a>Someday</a>
-        </li>
-      </ul>
-    </nz-dropdown-menu>
-  </div>
-  <div class="actions">
-    Settings
+<div class="parent">
+  <div class="top-nav">
+    <div class="leadings">
+      <h2>FOCUS TODO</h2>
+      <button nz-button nz-dropdown [nzDropdownMenu]="menu"><i class="add-circle" nz-icon nzTheme="fill"
+                                                               nzType="plus-circle"></i>New Item<i
+        nz-icon nzType="down"></i></button>
+      <nz-dropdown-menu #menu="nzDropdownMenu">
+        <ul nz-menu>
+          <li nz-menu-item>
+            <a>Next</a>
+          </li>
+          <li nz-menu-item>
+            <a>Waiting</a>
+          </li>
+          <li nz-menu-item>
+            <a>Scheduled</a>
+          </li>
+          <li nz-menu-item>
+            <a>Someday</a>
+          </li>
+        </ul>
+      </nz-dropdown-menu>
+    </div>
+    <div class="actions">
+      Settings
+    </div>
   </div>
 </div>
+
