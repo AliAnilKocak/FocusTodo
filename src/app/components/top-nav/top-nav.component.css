@@ -1,0 +1,38 @@
+.top-nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  height: 48px;
+  background-color: #2E88F7;
+  color: white;
+  padding-left: 12px;
+  padding-top: 8px;
+}
+
+.leadings {
+  display: flex;
+
+}
+
+.actions {
+  display: flex;
+}
+
+.leadings h2 {
+  color: white;
+  margin-right: 8px;
+  padding-bottom: 8px;
+}
+
+[nz-dropdown] {
+  background-color: transparent;
+  color: white;
+  border: none;
+  margin-left: 120px;
+  font-size: 15px;
+}
+
+
+button .add-circle-icon {
+  opacity: 0.6;
+}

@@ -1,0 +1,9 @@
+<div class="content">
+
+  <div cdkDropList (cdkDropListDropped)="onDrop($event)">
+    <div class="box" *ngFor="let item of items" cdkDrag>
+      <label nz-checkbox [(ngModel)]="checked">{{item}}</label>
+    </div>
+  </div>
+
+</div>
