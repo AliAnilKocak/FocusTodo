@@ -14,10 +14,7 @@ import {SidebarComponent} from './components/sidebar/sidebar.component';
 import {ContentComponent} from './components/content/content.component';
 import {TopNavComponent} from './components/top-nav/top-nav.component';
 import {NzButtonModule} from 'ng-zorro-antd/button';
-import {NextComponent} from './components/actions/next/next.component';
-import {ScheduledComponent} from './components/actions/scheduled/scheduled.component';
-import {SomedayComponent} from './components/actions/someday/someday.component';
-import {WaitingComponent} from './components/actions/waiting/waiting.component';
+import {TodolistComponent} from './components/todolist/todolist.component';
 
 registerLocaleData(en);
 
@@ -27,10 +24,7 @@ registerLocaleData(en);
     SidebarComponent,
     ContentComponent,
     TopNavComponent,
-    NextComponent,
-    ScheduledComponent,
-    SomedayComponent,
-    WaitingComponent
+    TodolistComponent
   ],
   imports: [
     BrowserModule,

@@ -2,11 +2,12 @@ import {Component} from '@angular/core';
 import {CdkDragDrop, moveItemInArray} from '@angular/cdk/drag-drop';
 
 @Component({
-  selector: 'app-next',
-  templateUrl: './next.component.html',
-  styleUrls: ['./next.component.css']
+  selector: 'app-todolist',
+  templateUrl: './todolist.component.html',
+  styleUrls: ['./todolist.component.css']
 })
-export class NextComponent {
+export class TodolistComponent {
+
   checked = true;
 
   items = ['First', 'Second', 'Third', 'Fourth'];
@@ -15,5 +16,6 @@ export class NextComponent {
     console.log(this.items);
     moveItemInArray(this.items, event.previousIndex, event.currentIndex);
   }
+
 
 }

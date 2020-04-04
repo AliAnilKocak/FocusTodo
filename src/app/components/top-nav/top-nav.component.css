@@ -16,6 +16,7 @@
 
 .actions {
   display: flex;
+  margin-right: 16px;
 }
 
 .leadings h2 {
