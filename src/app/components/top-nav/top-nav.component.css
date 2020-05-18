@@ -27,6 +27,7 @@
 .actions {
   display: flex;
   margin-right: 16px;
+  color: #fff;
 }
 
 .leadings h2 {
@@ -46,4 +47,14 @@
 
 button .add-circle-icon {
   opacity: 0.6;
+}
+
+.action-link {
+  color: white;
+  transition: all 180ms;
+}
+
+.action-link:hover {
+  color: white;
+  opacity: 0.7;
 }

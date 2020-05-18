@@ -1,8 +1,8 @@
-<div class="parent">
+<div  class="parent">
   <div class="top-nav">
     <div class="leadings">
-      <h2>FOCUS TODO</h2>
-      <button nz-button nz-dropdown [nzDropdownMenu]="menu"><i class="add-circle" nz-icon nzTheme="fill"
+      <h2><a nz-button nzType="link" class="action-link" routerLink="/" >FOCUS TODO</a></h2>
+      <button *ngIf="isRouteAuth()" nz-button nz-dropdown [nzDropdownMenu]="menu"><i class="add-circle" nz-icon nzTheme="fill"
                                                                nzType="plus-circle"></i>New Item<i
         nz-icon nzType="down"></i></button>
       <nz-dropdown-menu #menu="nzDropdownMenu">
@@ -22,8 +22,12 @@
         </ul>
       </nz-dropdown-menu>
     </div>
-    <div class="actions">
+    <div *ngIf="isRouteAuth()" class="actions">
       Settings
+    </div>
+    <div class="actions">
+      <a nz-button nzType="link" class="action-link" routerLink="login" href="">Login </a>
+      <a nz-button nzType="link" class="action-link" routerLink="register" href="">Register </a>
     </div>
   </div>
 </div>

@@ -4,8 +4,12 @@ import {TodolistComponent} from './components/todolist/todolist.component';
 
 
 const routes: Routes = [
-  {path: 'next', component: TodolistComponent},
-  {path: '**', component: TodolistComponent}
+  {path: '', component: TodolistComponent},
+  // {path: '**', component: TodolistComponent},
+  {
+    path: 'auth',
+    loadChildren: 'src/app/auth/auth.module#AuthModule'
+  },
 
 
 ];

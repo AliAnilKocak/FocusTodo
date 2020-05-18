@@ -14,6 +14,7 @@ import {SidebarComponent} from './components/sidebar/sidebar.component';
 import {TopNavComponent} from './components/top-nav/top-nav.component';
 import {NzButtonModule} from 'ng-zorro-antd/button';
 import {TodolistComponent} from './components/todolist/todolist.component';
+import {AuthModule} from './auth/auth.module';
 
 registerLocaleData(en);
 
@@ -33,6 +34,7 @@ registerLocaleData(en);
     BrowserAnimationsModule,
     DragDropModule,
     NzButtonModule,
+    AuthModule
   ],
   providers: [],
   bootstrap: [AppComponent]
