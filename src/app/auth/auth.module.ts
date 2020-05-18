@@ -4,6 +4,9 @@ import {LoginComponent} from './login/login.component';
 import {RegisterComponent} from './register/register.component';
 import {RouterModule, Routes} from '@angular/router';
 import {AuthComponent} from './auth/auth.component';
+import {NzButtonModule, NzFormModule, NzGridModule, NzInputModule} from 'ng-zorro-antd';
+import {ReactiveFormsModule} from '@angular/forms';
+import {TodolistComponent} from '../components/todolist/todolist.component';
 
 
 const routes: Routes = [
@@ -20,6 +23,9 @@ const routes: Routes = [
         component: RegisterComponent,
       },
     ]
+  },
+  {
+    path: 'next', component: TodolistComponent
   }
 ];
 
@@ -28,7 +34,12 @@ const routes: Routes = [
   declarations: [LoginComponent, RegisterComponent, AuthComponent],
   imports: [
     CommonModule,
-    RouterModule.forChild(routes)
+    RouterModule.forChild(routes),
+    NzFormModule,
+    NzInputModule,
+    ReactiveFormsModule,
+    NzGridModule,
+    NzButtonModule
   ]
 })
 export class AuthModule {
